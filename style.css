@@ -25,26 +25,71 @@ header a:hover {
     background-color: #E0E0E0;
 }
 
-h1 {
-    font-family: sans-serif;
-    color: white;
-    text-shadow: 0px 0px 2px #000000;
-    margin-top: 0;
-    padding: 20px;
-    text-align: center;
-}
-
 .top_content {
     background-image: url("img/Background1.png");
     background-size: cover;
     background-position: bottom;
     padding-top: 4rem;
     height: 40rem;
-    /* text-align: center; */
+    font-family: sans-serif;
+    color: white;
+}
+
+.top_content h1 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 2px #000000;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.top_content p {
+    color: #FFD060;
+    padding: 10px 100px;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.top_content img {
+    margin-left: 120px;
+    max-height: 14rem;
+}
+
+#mcedit_image {
+    background-image: url("img/mcedit.png");
+}
+
+.main_content {
+    font-family: sans-serif;
+    padding: 4rem 20px;
+    min-height: 20rem;
+}
+
+.main_content details {
+    border: 2px solid #D0D0D0;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.main_content summary {
+    font-size: 1.5rem;
+}
+
+.github_link {
+    float: right;
 }
 
 #aboutlink {
     float: right;
     margin: 0 50px 0 0;
     padding: 0;
+}
+
+footer {
+    color: #808080;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 2px solid #D0D0D0;
+    padding: 1rem;
 }
