@@ -26,7 +26,7 @@ header a:hover {
 }
 
 .top_content {
-    background-image: url("img/Background1.png");
+    /* background-image: url("img/Background1.png"); */
     background-size: cover;
     background-position: bottom;
     padding-top: 4rem;
@@ -57,6 +57,19 @@ header a:hover {
 
 #mcedit_image {
     background-image: url("img/mcedit.png");
+}
+
+#school_image {
+    background-image: url("img/school.png");
+}
+
+#index_image {
+    background-color: #161B24;
+    height: 35rem;
+}
+
+#lang_panel {
+    
 }
 
 .main_content {
