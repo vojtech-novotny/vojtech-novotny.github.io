@@ -29,6 +29,7 @@ header a:hover {
 .top_container {
     background-size: cover;
     background-position: bottom;
+    background-image: url("img/Background1.png");
     padding-top: 4rem;
     padding-bottom: 10%;
     display: flex;
