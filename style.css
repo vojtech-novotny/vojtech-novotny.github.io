@@ -95,6 +95,15 @@ h1 {
     font-family: sans-serif;
 }
 
+#about_image {
+    background-image: url("img/about_orange.png");
+}
+
+#about_image h1 {
+    font-size: 5rem;
+    padding-top: 10rem;
+}
+
 #lang_panel {
     text-align: center;
     padding: 0;
