@@ -189,7 +189,7 @@ h1 {
 }
 
 .section {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
 figure {
@@ -201,6 +201,60 @@ figcaption {
     color: #808080;
     font-style: italic;
     padding: 1rem;
+}
+
+figure img {
+    width: 960px;
+}
+
+.figure_right {
+    /* float: right; */
+    text-align: right;
+}
+
+.figure_right img {
+    width: 480px;
+}
+
+.figure_left {
+    /* float: left; */
+    text-align: left;
+}
+
+.figure_left img {
+    width: 480px;
+}
+
+#mc_background {
+    background-image: url("img/minecraft_cut.png");
+    background-size: cover;
+    background-position: top;
+
+    font-family: sans-serif;
+    text-shadow: 0px 0px 2px #000000;
+    color: white;
+
+    min-height: 35rem;
+    padding: 0 100px;
+}
+
+#mc_background h2 {
+    font-size: 2.5rem;
+    padding-top: calc(5% + 2rem);
+    padding-bottom: 15rem;
+    max-width: 90rem;
+    width: 100%;
+    margin: auto;
+}
+
+#mc_background p {
+    font-size: 1.5rem;
+    max-width: 90rem;
+    margin: auto;
+}
+
+#mc_container {
+    /* background-color: #404040; */
 }
 
 footer {
