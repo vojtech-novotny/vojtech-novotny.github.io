@@ -150,6 +150,7 @@ h1 {
     min-height: 20rem;
     width: 100%;
     max-width: 90rem;
+    font-size: 1.2rem;
 }
 
 .main_content details {
@@ -188,7 +189,18 @@ h1 {
 }
 
 .section {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+}
+
+figure {
+    text-align: center;
+    padding: 1rem;
+}
+
+figcaption {
+    color: #808080;
+    font-style: italic;
+    padding: 1rem;
 }
 
 footer {
