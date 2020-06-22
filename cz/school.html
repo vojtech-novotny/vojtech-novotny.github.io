@@ -7,10 +7,12 @@
 <body>
     <div class="container">
         <header>
-            <a href="home.html">Domů</a>
-            <a class="hl_link" href="school.html">School</a>
-            <a href="mcedit.html">McEdit</a>
-            <a id="aboutlink" href="about.html">About Me</a>
+            <div class="header_content">
+                <a href="home.html">Domů</a>
+                <a class="hl_link" href="school.html">Škola</a>
+                <a href="mcedit.html">McEdit</a>
+                <a id="aboutlink" href="about.html">O Mně</a>
+            </div>
         </header>
 
         <div id="school_image" class="top_container">
@@ -25,50 +27,52 @@
             </div>
         </div>
 
-        <div class="main_content">
-            <details>
-                <summary>Překladač jazyka IFJcode2018 v C<a class="github_link" href="https://github.com/vojtech-novotny/IFJcode2018">github</a></summary>
-                <p>Překladač zadaného jazyka IFJcode2018.</p>
-                <p>Jedná se typicky o první velký týmových projekt který se na škole dělá
-                a je to asi jeden z nejobtížnějších. Ze skupiny 4 lidí jsem vytvořil lexikální analyzátor
-                a podstatně jsem pracoval také na parseru a sémantickém analyzátoru.</p>
-                <p>Generování kódu bohužel není dokončeno, ale kromě toho by měly všechny části fungovat dobře a detekovat veškeré chyby kódu.</p>
-            </details>
+        <div class="main_container">
+            <div class="main_content">
+                <details>
+                    <summary>Překladač jazyka IFJcode2018 v C<a class="github_link" href="https://github.com/vojtech-novotny/IFJcode2018">github</a></summary>
+                    <p>Překladač zadaného jazyka IFJcode2018.</p>
+                    <p>Jedná se typicky o první velký týmových projekt který se na škole dělá
+                    a je to asi jeden z nejobtížnějších. Ze skupiny 4 lidí jsem vytvořil lexikální analyzátor
+                    a podstatně jsem pracoval také na parseru a sémantickém analyzátoru.</p>
+                    <p>Generování kódu bohužel není dokončeno, ale kromě toho by měly všechny části fungovat dobře a detekovat veškeré chyby kódu.</p>
+                </details>
 
-            <details>
-                <summary>Interpret jazyka IPPcode2019 v Pythonu a PHP<a class="github_link" href="https://github.com/vojtech-novotny/IPPcode2019">github</a></summary>
-                <p>Sada skriptů pro analýzu a interpretaci zadaného jazyka IPPcode19.</p>
-                <p>Projekt je dozdělen do dvou částí (souborů):</p>
-                <ul>
-                    <li>parse.php - provede analýzu kódu a pokud je bez chyb, převede ho XML reprezentace.</li>
-                    <li>interpret.py - provede interpretaci XML souboru.</li>
-                </ul>
-                <p>Z nějakého důvodu mám readme pouze pro druhou část.</p>
-            </details>
-
-            <details>
-                <summary>Jednoduchý HTTP server v C<a class="github_link" href="https://github.com/vojtech-novotny/IPK-HTTP-server">github</a></summary>
-                <p>Reaguje na 3 typy dotazů:
+                <details>
+                    <summary>Interpret jazyka IPPcode2019 v Pythonu a PHP<a class="github_link" href="https://github.com/vojtech-novotny/IPPcode2019">github</a></summary>
+                    <p>Sada skriptů pro analýzu a interpretaci zadaného jazyka IPPcode19.</p>
+                    <p>Projekt je dozdělen do dvou částí (souborů):</p>
                     <ul>
-                        <li>/hostname - odešle hostname.</li>
-                        <li>/cpu-name - odešle jméno cpu serveru.</li>
-                        <li>/load - odešle momentální zatížení cpu serveru.</li>
+                        <li>parse.php - provede analýzu kódu a pokud je bez chyb, převede ho XML reprezentace.</li>
+                        <li>interpret.py - provede interpretaci XML souboru.</li>
                     </ul>
-                </p>
-            </details>
+                    <p>Z nějakého důvodu mám readme pouze pro druhou část.</p>
+                </details>
 
-            <details>
-                <summary>Webová stránka Restaurace pouze pomocí HTML a CSS<a class="github_link" href="https://github.com/vojtech-novotny/ITW-Projekt2">github</a></summary>
-                <p>Webová stránka pro smyšlenou Restauraci.</p>
-                <p>Jedná se v podstatě o první webovou stránku kterou jsem kompletně vytvořil.
-                Obsahuje spoustu ukradených assetů a design je přinejmenším "zajímavý".</p>
-            </details>
+                <details>
+                    <summary>Jednoduchý HTTP server v C<a class="github_link" href="https://github.com/vojtech-novotny/IPK-HTTP-server">github</a></summary>
+                    <p>Reaguje na 3 typy dotazů:
+                        <ul>
+                            <li>/hostname - odešle hostname.</li>
+                            <li>/cpu-name - odešle jméno cpu serveru.</li>
+                            <li>/load - odešle momentální zatížení cpu serveru.</li>
+                        </ul>
+                    </p>
+                </details>
 
-            <details>
-                <summary>FreeRTOS Demo pro Fitkit3 v C<a class="github_link" href="https://github.com/vojtech-novotny/FitKit3-FreeRTOS-Demo">github</a></summary>
-                <p>Tohle je mnou vytvořená část projektu pro embeded FitKit3 platformu.
-                Aplikace demonstruje základní koncepty používané pro realtime programming.</p>
-            </details>
+                <details>
+                    <summary>Webová stránka Restaurace pouze pomocí HTML a CSS<a class="github_link" href="https://github.com/vojtech-novotny/ITW-Projekt2">github</a></summary>
+                    <p>Webová stránka pro smyšlenou Restauraci.</p>
+                    <p>Jedná se v podstatě o první webovou stránku kterou jsem kompletně vytvořil.
+                    Obsahuje spoustu ukradených assetů a design je přinejmenším "zajímavý".</p>
+                </details>
+
+                <details>
+                    <summary>FreeRTOS Demo pro Fitkit3 v C<a class="github_link" href="https://github.com/vojtech-novotny/FitKit3-FreeRTOS-Demo">github</a></summary>
+                    <p>Tohle je mnou vytvořená část projektu pro embeded FitKit3 platformu.
+                    Aplikace demonstruje základní koncepty používané pro realtime programming.</p>
+                </details>
+            </div>
         </div>
     </div>
 
