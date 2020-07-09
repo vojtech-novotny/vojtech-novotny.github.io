@@ -206,6 +206,27 @@ figure img {
     max-width: 100%;
 }
 
+#portrait_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem;
+    margin: 0;
+    background-color: #F5F8E0;
+}
+
+#portrait_text {
+    margin-top: 2rem;
+}
+
+#portrait {
+    margin: 0 0 0 4rem;
+    padding: 0;
+}
+
+#portrait img {
+    width: 477px;
+}
+
 .figure_right {
     text-align: right;
 }
