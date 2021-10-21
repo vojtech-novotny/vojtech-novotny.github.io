@@ -38,7 +38,7 @@ header a:hover {
 .top_container {
     background-size: cover;
     background-position: bottom;
-    background-image: url("img/Background1.png");
+    background-image: url("../img/Background1.png");
     padding-top: 4rem;
     padding-bottom: 10%;
     display: flex;
@@ -82,16 +82,16 @@ h1 {
 }
 
 #home_image {
-    background-image: url("img/gh_blur.png");
+    background-image: url("../img/gh_blur.png");
     /* height: 34rem; */
 }
 
 #mcedit_image {
-    background-image: url("img/mcedit_blur.png");
+    background-image: url("../img/mcedit_blur.png");
 }
 
 #school_image {
-    background-image: url("img/school_blur.png");
+    background-image: url("../img/school_blur.png");
 }
 
 #index_image {
@@ -105,11 +105,11 @@ h1 {
 }
 
 #game_design_image {
-    background-image: url("img/game_design.png");
+    background-image: url("../img/game_design.png");
 }
 
 #about_image {
-    background-image: url("img/about_orange.png");
+    background-image: url("../img/about_orange.png");
 }
 
 #about_image h1 {
@@ -271,7 +271,7 @@ figure img {
 }
 
 #mc_background {
-    background-image: url("img/minecraft_cut.png");
+    background-image: url("../img/minecraft_cut.png");
     background-size: cover;
     background-position: top;
 
