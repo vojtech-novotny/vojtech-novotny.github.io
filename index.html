@@ -1,32 +1,98 @@
 <!DOCTYPE html>
 <head>
     <title>vojtech-novotny github</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
-<body>
-    <div class="container">
+<body onload="myOnloadFuntion()">
+    <!-- TODO: Change the way contact form is closed -->
+    <div id="ContactForm" class="popup_container hidden">
+        <div class="popup_content">
+            <p>To contact me, plese message me trough my <a href="">Linked-In</a> profile.</p>
+        </div>
+    </div>
+
+    <div id="ImageForm" class="popup_container hidden">
+        <div class="popup_content">
+            <img id="ImageFormImage" src="" alt="displayed image">
+        </div>
+    </div>
+
+    <div id="MainContainer" class="fill_screen">
         <header>
             <div class="header_content">
-                <a class="hl_link" href="index.html">Home</a>
-                <a href="school.html">School</a>
-                <a href="mcedit.html">McEdit</a>
-                <a href="game_design.html">Game Design</a>
-                <a id="aboutlink" href="about.html">About Me</a>
+                <a class="hl_link" href="#SectionHome">Home</a>
+                <a href="#SectionWork">Web Development</a>
+                <a href="#SectionSchool">School Projects</a>
+                <a href="#SectionAboutMe">About Me</a>
+                <button id="ContactButton">Contacts</button>
             </div>
         </header>
-        <div id="home_image" class="top_container">
-            <div id="lmao" class="top_content">
-                <h1>vojtech-novotny github</h1>
+
+        
+
+        <div id="SectionHome" class="container">
+            <div class="panel">
+                <h1 class="framed">vojtech-novotny github</h1>
+                <p class="text-center">A small collection of my work in various areas.</p>
+                <p class="text-center">Includes <strong>Web Development</strong> projects, various <strong>Python</strong> scripts from stand-alone aplications to scripts for the MCEdit API, <strong>WinForms C#</strong> apps and more.</p>
+            </div>
+        </div>
+
+        <div id="SectionWork" class="container">
+            <div class="panel">
+                <a class="float_right" href="403.html" target="blank">
+                    <img class="github_link_image" src="assets/img/GitHub-Mark-Light-120px-plus.png" alt="github link">
+                </a>
+                <div>
+                    <h2 class="underlined">Presentation Website for <br><strong>Mužský Sbor Dubňany</strong></h2>
+                </div>
+                <div>
+                    <div class="figure float_right">
+                        <div id="WorkImageThumbnail" class="white_gradient"></div>
+                    </div>
+                    <p>A simple multi-page website built using <strong>JavaScrip</strong> and <strong>Bootstrap</strong> framework.</p>
+                    <p>It uses Google services for data storage and account management, because the client was already using these services to a great extent and it was easier to simply use Google Calendar API and Google Photos API to manage the data than to migrate the client to a custom database.</p>
+                    <p>The website is currently still under construction and the github is not public since I made the dumb decision of including my API keys directly in the code.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="SectionSchool" class="container">
+            <div class="panel">
+                <a class="float_right" href="https://github.com/vojtech-novotny/IPPcode2019" target="blank">
+                    <img class="github_link_image" src="assets/img/GitHub-Mark-Light-120px-plus.png" alt="github link">
+                </a>
+                <h2 class="underlined">School Project<br><strong>Custom Language Interpreter</strong></h2>
+                <p>An interpreter for the IPPcode2019 custom langeage which is a subset of a Three-Address Code.</p>
+                <p>It is made up of 2 separate script files:</p>
+                <ul>
+                    <li>
+                        A <strong>PHP</strong> (don't ask) parser that performs lexical analysis of the source code and converts the source code into a specific XML representation.
+                    </li>
+                    <li>
+                        A <strong>Python</strong> interpreter that performs syntactic and semantic analysis of the XML representation and interprets it in the command line.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="SectionAboutMe" class="container">
+            <div class="panel">
+                <h1>About Me</h1>
+                <p>My name is Vojtěch Novotný. How did I end up here?</p>
+                <p>After graduating the 8-year high school Klvaňovo Gymnázium Kyjov with excelent grades, I decided to pursue computer science at the Faculty of Information Technology at the Brno University of Technology. But during my studies my interests shifted heavily into other areas such as Music and Social Dances. In particular the family of Swing Dances. I dropped out in third year and after that I pursued a variety of jobs, smaller and bigger including being a Dance Instructor. </p>
+                <p>Unfortunatelly COVID-19 put an end to everything and after a long period of self-searching I decided that computer science is something I really want to do.</p>
+                <p>I still love dancing and music though. I still would love to teach dance when the situation gets a bit better. I go social dancing as often as I can. I am part of a semiprofessional dance group with which we perform in various venues and even plan to perform at the European Championship, if it doesn't get canceled. In what little time I have left I play my guitar and try to keep myself physically fit and healthy. You probably won't find me in the gym but you might run into me at a local bouldering crag with climbing shoes on and smudges of chalk all over.</p>
+                <img class="photo" src="assets/img/photos/dancing.jpg" alt="me dancing at a swing dance festival">
             </div>
         </div>
     </div>
     <footer>
-        vojtech-novotny © 2020
+        vojtech-novotny © 2021
     </footer>
-    <script type="text/javascript">
-        let home_image = document.getElementById('lmao');
-        let child = document.createTextNode("LMAO");
-        home_image.appendChild(child);
-    </script>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

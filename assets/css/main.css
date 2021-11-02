@@ -1,9 +1,189 @@
+/* Setup */
+
+html {
+    scroll-behavior: smooth;
+}
 
 html,body {
     margin: 0px;
     padding: 0px;
     height: 100%;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* Basic Styles */
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 0px 0px 2px #000000;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 1rem;
+}
+
+details {
+    border-left: 3px solid black;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+strong {
+    color: #FFD060;
+}
+
+a {
+    color: #8080C0;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C0C080;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+
+/* Basic Utility Classes */
+
+.hidden {
+    display: none !important;
+}
+
+.fill_screen {
+    margin: 0;
+    padding: 0;
+    min-height: calc(100% - 4rem);
+    background-color: #101010;
+}
+
+.container {
+    margin: 0;
+    padding: 4rem 0 10rem 0;
+    font-size: 1.5rem;
+}
+
+.section {
+    margin-bottom: 6rem;
+}
+
+.framed {
+    border: 2px solid white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.underlined {
+    border-bottom: 2px solid white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.figure {
+    
+    margin: 2rem;
+    margin-top: 0;
+    width: max(20rem, 20vw);
+    height: calc(max(25rem, 30vw) * 0.5);
+    background-image: url("../img/MuzaciPageF.png");
+    background-size: cover;
+}
+
+.float_right {
+    float: right;
+}
+
+.white_gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(196, 196, 196, 0) 70%, rgba(196, 196, 196, 1) 100%);
+    transition: background-color 0.1s;
+}
+
+.white_gradient:hover {
+    background:rgba(128, 128, 128, 0.5);
+}
+
+
+/* Specific Section Classes */
+
+.popup_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+.popup_content {
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
+    padding: 0 2rem;
+    width: auto;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 7px;
+}
+
+#ImageFormImage {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.panel {
+    /* height: 100vh; */
+    margin: 1rem max(min(calc((100vw - 50rem)/2), 20vw), 2rem);
+    color: white;
+}
+
+#SectionHome {
+    max-height: calc(800px - 14rem);
+    background-image: url("../img/final/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+#SectionWork {
+    
+}
+
+#SectionSchool {
+    
+}
+
+#SectionAboutMe {
+    background-color: #161B24;
+}
+
+.photo {
+    width: 100%;
+}
+
+
+/* Not Sorted */
 
 header {
     position: fixed;
@@ -15,6 +195,8 @@ header {
     display: flex;
     justify-content: center;
     z-index: 1;
+
+    font-family: serif;
 }
 
 .header_content {
@@ -29,145 +211,31 @@ header a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #161B24;
+    transition: background-color 0.2s;
+}
+
+header a:hover {
+    color: #161B24;
 }
 
 header a:hover {
     background-color: #E0E0E0;
 }
 
-.top_container {
-    background-size: cover;
-    background-position: bottom;
-    background-image: url("../img/Background1.png");
-    padding-top: 4rem;
-    padding-bottom: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.top_content {
-    /* background-image: url("img/Background1.png"); */
-    font-family: sans-serif;
-    color: white;
-    width: 100%;
-    max-width: 90rem;
-    min-height: 25rem;
-}
-
-h1 {
-    font-size: 3rem;
-    text-shadow: 0px 0px 2px #000000;
-    margin: 0;
-    padding: 2rem;
-    text-align: center;
-}
-
-.top_content p {
-    color: #ffffff; /*#FFD060;*/
-    padding: 0;
-    margin: 1rem 100px;
+header button {
+    float: right;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: inherit;
     font-size: 1.5rem;
-    text-shadow: 0px 0px 2px #000000;
+    text-decoration: none;
+    color: #161B24;
+    border: none;
+    transition: background-color 0.2s;
 }
 
-.top_content strong {
-    color: #FFD060;
-    /* font-weight: normal; */
-}
-
-.hl_link {
-    /* border: 2px solid #C0C0C0; */
-    border-radius: 3px;
-    background-color: #F0F0F0;
-}
-
-#home_image {
-    background-image: url("../img/gh_blur.png");
-    /* height: 34rem; */
-}
-
-#mcedit_image {
-    background-image: url("../img/mcedit_blur.png");
-}
-
-#school_image {
-    background-image: url("../img/school_blur.png");
-}
-
-#index_image {
-    background-color: #161B24;
-    /* height: calc(100% - 4rem); */
-    min-height: 100%;
-    width: 100%;
-    margin: 0;
-    color: white;
-    font-family: sans-serif;
-}
-
-#game_design_image {
-    background-image: url("../img/game_design.png");
-}
-
-#about_image {
-    background-image: url("../img/about_orange.png");
-}
-
-#about_image h1 {
-    font-size: 5rem;
-    padding-top: 10rem;
-}
-
-#lang_panel {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-#lang_panel img {
-    vertical-align: bottom;
-    padding: 0;
-    padding-bottom: 5%;
-    margin: 0;
-    width: 38%;
-}
-
-#lang_panel a {
-    margin: 2%;
-}
-
-.main_container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.main_content {
-    bottom: 0;
-    padding: 4rem 100px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    min-height: 20rem;
-    width: 100%;
-    max-width: 90rem;
-
-    font-family: sans-serif;
-    font-size: 1.2rem;
-}
-
-details {
-    border-left: 3px solid black;
-    padding: 1rem;
-    margin: 2rem 0;
-}
-
-.main_content summary {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.main_content h2 {
-    font-size: 2.5rem;
+header button:hover {
+    background-color: #E0E0E0;
 }
 
 .github_link {
@@ -178,16 +246,6 @@ details {
     float: right;
     padding: 0.5rem;
     margin: 0.5rem;
-}
-
-.container {
-    margin: 0;
-    padding: 0;
-    min-height: calc(100% - 4rem);
-}
-
-.section {
-    margin-bottom: 6rem;
 }
 
 figure {
@@ -204,27 +262,6 @@ figcaption {
 figure img {
     width: 960px;
     max-width: 100%;
-}
-
-#portrait_section {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 2rem;
-    margin: 0;
-    background-color: #F5F8E0;
-}
-
-#portrait_text {
-    margin-top: 2rem;
-}
-
-#portrait {
-    margin: 0 0 0 4rem;
-    padding: 0;
-}
-
-#portrait img {
-    width: 477px;
 }
 
 .figure_right {
@@ -270,38 +307,6 @@ figure img {
     width: auto;
 }
 
-#mc_background {
-    background-image: url("../img/minecraft_cut.png");
-    background-size: cover;
-    background-position: top;
-
-    font-family: sans-serif;
-    text-shadow: 0px 0px 2px #000000;
-    color: white;
-
-    min-height: 35rem;
-    padding: 0 100px;
-}
-
-#mc_background h2 {
-    font-size: 2.5rem;
-    padding-top: calc(5% + 2rem);
-    padding-bottom: 15rem;
-    max-width: 90rem;
-    width: 100%;
-    margin: auto;
-}
-
-#mc_background p {
-    font-size: 1.5rem;
-    max-width: 90rem;
-    margin: auto;
-}
-
-#mc_container {
-    /* background-color: #404040; */
-}
-
 footer {
     color: #808080;
     text-align: center;
@@ -317,4 +322,26 @@ footer {
 
 footer img {
     height: 1rem;
+}
+
+.screen_container {
+    height: 150vh;
+}
+
+.github_link_image {
+    margin-top: 1rem;
+    padding: 1rem;
+    max-height: 4rem;
+    transition: background-color 0.2s;
+}
+
+.github_link_image:hover {
+    background-color: #808080;
+}
+
+.small_name {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: #161B24;
 }
