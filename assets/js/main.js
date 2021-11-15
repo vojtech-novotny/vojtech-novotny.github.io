@@ -10,8 +10,10 @@ function myOnloadFuntion() {
 
     document.onkeydown = function(event)
         { 
-            if (event.key === 'Escape')
+            if (event.key === 'Escape') {
                 hide(contactForm); 
+                mainContainer.style.filter = '';
+            }
         };
 
     contactForm.onclick = function()
